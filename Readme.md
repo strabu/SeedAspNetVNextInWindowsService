@@ -2,26 +2,26 @@ This is a seed-project for ASP.NET vNext-Applications that are self-hosted in a 
 
 Usage
 =====
-- Clone the repository
+1) Clone the repository
 
-- Configure hostname and port in appsettings.json
+2) Configure hostname and port in appsettings.json
 ```
 "server.urls": "http://localhost:5000"
 ```
 
-Run a Command Prompt as Administrator and execute the following commands to register the Service
+3) Run a Command Prompt as Administrator and execute the following commands to register the Service
 - list the installed dot.net runtimes and make sure you are using this version of the runtime:
   1.0.0-rc1-update1 clr     x86          win             default
 ```
 dnvm list
 ```
 
-get the path to your dnx.exe
+4) get the path to your dnx.exe
 ```
 where dnx.exe
 ```
 
-install the service
+5) install the service
 ```
 sc.exe create "My Self-hosted Website" binPath= "C:\Users\YOUR_USER_NAME\.dnx\runtimes\dnx-clr-win-x86.1.0.0-rc2-16357\bin\dnx.exe -p C:\YOUR_DIRECTORY\WWWService\ run --windows-service"
 ```
@@ -39,11 +39,11 @@ If you want to run your service with the "Local System account"
 sc.exe create "My Self-hosted Website" binPath= "C:\Users\YOUR_USER_NAME\.dnx\runtimes\dnx-clr-win-x86.1.0.0-rc2-16357\bin\dnx.exe -p C:\YOUR_DIRECTORY\WWWService\bin\output\approot\src\WWWService run --windows-service"
 ```
 
-start the service
+6) start the service
 
-look into the windows Application Event-Log to see what the service is doing
+7) look into the windows Application Event-Log to see what the service is doing
 
-open a browser and connect to http://localhost:5000
+8) open a browser and connect to http://localhost:5000
 
 
 Developing
