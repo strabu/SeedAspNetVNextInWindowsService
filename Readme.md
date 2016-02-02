@@ -1,5 +1,7 @@
 This is a seed-project for ASP.NET vNext-Applications that are self-hosted in a WindowsService.
 
+![alt tag](https://raw.githubusercontent.com/strabu/SeedAspNetVNextInWindowsService/master/assets/ServiceScreenshot.png)
+
 Usage
 =====
 1) Clone the repository
